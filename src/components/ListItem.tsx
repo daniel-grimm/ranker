@@ -15,7 +15,17 @@ export const ListItem: React.FC<IListItem> = ({ label }) => {
 
     return (
         <>
-            <Flex>
+            <Flex
+                pl={"2rem"}
+                pt={"0.5rem"}
+                pb={"0.5rem"}
+                minWidth={"15rem"}
+                gap={"1rem"}
+                borderRadius={"5px"}
+                boxShadow="4px 4px 10px rgba(0, 0, 0, 0.25)"
+                backgroundColor={"#242424"}
+                color={"#ffffff"}
+            >
                 <Checkbox
                     isChecked={isChecked}
                     onChange={() => handleCheckboxChange(event)}
